@@ -1,8 +1,12 @@
 package com.company.oop.polymorfism.model;
 
-public class Caine extends Animal{
+public final class Caine extends Animal{
     public Caine(String nume) {
         super(nume);
+    }
+
+    public Caine(String nume, int varsta){
+        super(nume, varsta);
     }
 
     // overload

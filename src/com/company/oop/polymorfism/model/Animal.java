@@ -1,9 +1,8 @@
 package com.company.oop.polymorfism.model;
 
-public class Animal {
+public abstract class Animal { // use case -- nu vrem instante Animmal
     private String nume;
     private int varsta;
-
 
     // Overload
     public Animal(String nume) {
@@ -12,13 +11,19 @@ public class Animal {
 
     // Overload
     public Animal(String nume, int varsta) {
-        this.nume = nume;
+        this(nume);
         this.varsta = varsta;
     }
 
     // Overload
     public Animal(){
 
+    }
+
+    public static Animal getInstance(){
+        return new Animal() {
+
+        };
     }
 
 
