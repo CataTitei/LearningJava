@@ -7,9 +7,14 @@ public class Casa {
     private int nrTigle;
     private boolean hasGaraj;
     private String numeCasa;
+    public static String numeCasa2 = "casa statica 2";
 
     public Casa() {
 
+    }
+
+    public static String getNumeCasa2(){
+        return numeCasa2;
     }
 
     public Casa(int nrUsiInConstructor, int nrHornuri, int nrGeamuri, int nrTigle) {
